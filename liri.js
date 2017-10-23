@@ -3,6 +3,8 @@
   /*
   ---Import libraries---
   */
+  require('dotenv').config();
+  
   const fs = require("fs");
   const twitter = require("twitter");
   const request = require("request");
