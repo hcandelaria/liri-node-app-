@@ -1,0 +1,32 @@
+my-tweets-""
+I Love Twitter On: Sat Oct 21 18:04:33 +0000 2017
+testing liri On: Fri Oct 20 07:34:18 +0000 2017
+
+movie-this-"Pirates of the Caribbean"
+Title: Pirates of the Caribbean: The Curse of the Black Pearl
+Release year:2003
+Internet Movie Database rating: 8.0/10
+Rotten Tomatoes rating: 79%
+Produced in: USA
+Language: English
+Plot: Blacksmith Will Turner teams up with eccentric pirate "Captain" Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.
+Actors: Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightley
+
+spotify-this-song-"rockstar"
+Search by: rockstar
+Artist(s): 
+          Post Malone
+          21 Savage
+Track: rockstar
+Album: rockstar
+Preview: N/A
+
+do-what-it-says-""
+spotify-this-song-"I Want it That Way"
+Search by: I Want it That Way
+Artist(s): 
+          Backstreet Boys
+Track: I Want It That Way
+Album: The Hits--Chapter One
+https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=e1229b85cc46485ebf4c087322ec51b3
+
