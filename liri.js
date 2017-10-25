@@ -4,13 +4,12 @@
   ---Import libraries---
   */
   require('dotenv').config();
-  
+
   const fs = require("fs");
   const twitter = require("twitter");
   const request = require("request");
   const SpotifyWebApi = require('spotify-web-api-node');
   const keys = require("./keys.js")
-  const moment = require('moment');
   /*
   ---Initialize global variables---
   */
@@ -29,8 +28,6 @@
     clientId : keys.spotifyKeys.clientID,
     clientSecret : keys.spotifyKeys.clientSecret
   });
-  //Initialize Moment
-  moment().format();
   /*
   ---Global functions---
   */
@@ -40,9 +37,13 @@
                 function(error, tweet, response) {
       if(error) throw error;
       var textOutput = "";
+
       for(var i = 0; i< tweet.length; i++){
         //console.log(tweet);
-        textOutput += tweet[i].text + " On: " + tweet[i].created_at + '\n';
+        var date = splitAt(10)(tweet[i].created_at);
+        var year = splitAt(25)(tweet[i].created_at)
+        date = date[0] + year[1];
+        textOutput += tweet[i].text + " On: " + date + '\n';
       }
       //Output to terminal/bash
       console.log(textOutput);
@@ -52,6 +53,8 @@
     //Output to log.text command and param
     logData();
   }
+  //Split string at index
+  const splitAt = index => x => [x.slice(0, index), x.slice(index)]
   //Fecth the spotifyApi token
   const spotifyToken = () =>{
     // Get an access token and 'save' it using a setter
